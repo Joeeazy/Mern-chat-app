@@ -9,6 +9,8 @@ const Message = ({ message }) => {
   const formattedTime = extractTime(message.createdAt);
   const chatClassName = fromMe ? "chat-end" : "chat-start";
 
+  const ShakeClass = message.shouldShake ? "shake" : "";
+
   const profilePic = fromMe
     ? authUser.profilePic
     : selectedConversation?.profilePic;
@@ -22,7 +24,9 @@ const Message = ({ message }) => {
           <img alt="Tailwind css chat bubble component" src={profilePic} />
         </div>
       </div>
-      <div className={`chat-bubble text-white ${bubbleBgColor} pb-1`}>
+      <div
+        className={`chat-bubble text-white ${bubbleBgColor} ${ShakeClass} pb-1`}
+      >
         {message.message}
       </div>
       <div className={"chat-footer opacity-50 text-cs flex gap-1 items-center"}>
