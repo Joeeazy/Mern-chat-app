@@ -1,7 +1,5 @@
 import mongoose from "mongoose";
 
-//create a messages schema a senderid receiverid and the message
-
 const messageSchema = new mongoose.Schema(
   {
     senderId: {
@@ -18,12 +16,11 @@ const messageSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    // createdAt, updatedAt
   },
-  //created at, updated at => message.created at :15:20 15/11/2023
   { timestamps: true }
 );
 
-//ccreate a model
-const message = mongoose.model("Message", messageSchema);
+const Message = mongoose.model("Message", messageSchema);
 
-export default message;
+export default Message;
