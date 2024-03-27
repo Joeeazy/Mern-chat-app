@@ -6,9 +6,9 @@
 
 During this project, I was able to cover a range of topics, including building full-stack applications, working with complex MongoDB queries, schemas, and models, and creating user interfaces.
 
-I also got cover how to implement JWT authentication and password hashing for securing the application. Also, how to implement notifications functionality for users
+I also got cover how to implement JWT authentication and password hashing for securing the application. Also, how to implement notifications functionality for users.
 
-The techologies used was the MERN stack
+The technologies used was the MERN stack
 
 MERN stands for MongoDB, Express, React, Node, after the four key technologies that make up the stack.
 
